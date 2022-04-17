@@ -15,12 +15,39 @@ body {
   justify-content: center;
 }
 
+.text {
+  padding: 8px;
+}
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
+
+.Left {
+  display: flex;
+  align-self: flex-start;
+}
+
+.Right {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.Center {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 .icon {
   color: royalblue;
@@ -31,8 +58,8 @@ body {
   height: 42px;
   border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-self: center;
 }
 
 .close-button {
@@ -44,13 +71,24 @@ body {
   height: 24px;
   width: 24px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-self: center;
 }
 
+.header {
+  font-size: larger;
+  padding: 8px;
+}
+.Button {
+  display: flex;
+  gap: 8px;
+}
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  display: flex;
+  flex-direction:  row;
+  flex-wrap: nowrap;
 }
 
 button.continue {
